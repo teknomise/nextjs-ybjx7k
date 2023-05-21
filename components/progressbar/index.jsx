@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import './progress-bar.scss';
 
 const ProgressBar = ({ value }) => {
   const barInnerRef = useRef();
