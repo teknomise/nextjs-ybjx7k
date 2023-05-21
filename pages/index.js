@@ -20,10 +20,8 @@ import Box from '../components/box';
 import DashboardWrapper, {
   DashboardWrapperMain,
   DashboardWrapperRight,
-} from '../components/dashboard-wrapper/DashboardWrapper';
-import SummaryBox, {
-  SummaryBoxSpecial,
-} from '../components/summary-box/SummaryBox';
+} from '../components/dashboard-wrapper';
+import SummaryBox, { SummaryBoxSpecial } from '../components/summary-box';
 import { colors, data } from '../constants';
 import {
   Chart as ChartJS,
@@ -35,8 +33,8 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import OverallList from '../components/overall-list/OverallList';
-import RevenueList from '../components/revenue-list/RevenueList';
+import OverallList from '../components/overall-list';
+import RevenueList from '../components/revenue-list';
 
 ChartJS.register(
   CategoryScale,
