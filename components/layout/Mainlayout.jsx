@@ -1,16 +1,15 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 import Sidebar from '../components/sidebar/Sidebar';
 import TopNav from '../components/topnav/TopNav';
 
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
   return (
     <>
       <Sidebar />
       <div className="main">
         <div className="main__content">
           <TopNav />
-          <Outlet />
+          {children}
         </div>
       </div>
     </>
