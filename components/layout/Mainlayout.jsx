@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from '../components/sidebar/Sidebar';
-import TopNav from '../components/topnav/TopNav';
+import Sidebar from '../sidebar';
+import TopNav from '../topnav';
 
 const MainLayout = ({ children }) => {
   return (

@@ -13,7 +13,7 @@ const Sidebar = () => {
     const activeItem = sidebarNav.findIndex((item) => item.section === curPath);
 
     setActiveIndex(curPath.length === 0 ? 0 : activeItem);
-  }, [curPath]);
+  }, []);
 
   const closeSidebar = () => {
     document.querySelector('.main__content').style.transform =
@@ -35,8 +35,8 @@ const Sidebar = () => {
       <div className="sidebar__menu">
         {sidebarNav.map((nav, index) => (
           <Link
-            to={nav.link}
-            key={`nav-${index}`}
+            href={nav.link}
+            key={index}
             className={`sidebar__menu__item ${
               activeIndex === index && 'active'
             }`}

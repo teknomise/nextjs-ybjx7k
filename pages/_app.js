@@ -1,5 +1,5 @@
 import '../styles/App.scss';
-import MainLayout from '../components/layout/Mainlayout.jsx';
+import MainLayout from '../components/layout/Mainlayout';
 
 function MyApp({ Component, pageProps }) {
   return (

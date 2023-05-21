@@ -1,5 +1,5 @@
 import React from 'react';
-import UserInfo from '../user-info/UserInfo';
+import UserInfo from '../user-info';
 import { data } from '../../constants';
 
 const TopNav = () => {
